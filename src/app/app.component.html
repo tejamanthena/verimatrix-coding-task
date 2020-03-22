@@ -1,0 +1,16 @@
+<div class="container">
+  <div id="mainContent">
+    <h4 id="header">Convert Number to its Word in English</h4>
+    <form [formGroup]='numbersToWordsForm'>
+      <label style="font-weight: 500;">Enter Number:</label>
+      <input type="number" class="form-control" formControlName="inputNumber" [(ngModel)]="enteredNumber"
+        (keyup)="convertNumberToWords(enteredNumber)" />
+    </form>
+    <div>
+      <div [ngClass]="{'error':!isFormValid, 'success':isFormValid}" id="displayContent">
+        <span *ngIf="!isFormValid" class="validation">Please enter number between 1 and 99,999</span>
+        <span *ngIf="isFormValid">{{ convertToWords }}</span>
+      </div>
+    </div>
+  </div>
+</div>
