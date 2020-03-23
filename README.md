@@ -1,5 +1,9 @@
 # verimatrix-coding-task
 
+** Make sure your system has the newer version of Node installed and Angular 9
+Node can be installed from `https://nodejs.org/en/download/`
+To install Angular, execute this command - `npm install -g @angular/cli`
+
 Steps for project compilation::
 
 Git clone or Download the project
